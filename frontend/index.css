@@ -1,29 +1,66 @@
 /* frontend/index.css */
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
 }
 
 h1, h2 {
-    color: #333;
+    color: #444;
+    margin-bottom: 10px;
 }
 
-form {
+.form-section, .search-section, .list-section {
     margin-bottom: 20px;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+}
+
 input[type="text"] {
-    margin-right: 10px;
-    padding: 5px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
 }
 
 button {
-    padding: 5px 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
 
 #searchResult {
     margin-top: 10px;
     font-weight: bold;
+    color: #007bff;
 }
 
 ul {
@@ -32,5 +69,9 @@ ul {
 }
 
 li {
+    background-color: #f9f9f9;
     margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
 }
